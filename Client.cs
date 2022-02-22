@@ -2,14 +2,6 @@ namespace Курсач;
 
 public class Client
 {
-    private int id ;
-
-    public int Id
-    {
-        get => id;
-        set => id = value;
-    }
-
     public string FirstName
     {
         get => firstName;
