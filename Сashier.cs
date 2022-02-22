@@ -4,6 +4,19 @@ namespace Курсач;
 public class Cashier
 {
     public List<Client> clients;
+
+    public List<Client> Clients
+    {
+        get => clients;
+        set => clients = value ?? throw new ArgumentNullException(nameof(value));
+    }
+
+    public List<Product> ExpiredProducts
+    {
+        get => expiredProducts;
+        set => expiredProducts = value ?? throw new ArgumentNullException(nameof(value));
+    }
+
     public List<Product> expiredProducts;
 
     public Cashier()

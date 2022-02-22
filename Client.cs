@@ -1,10 +1,45 @@
 namespace Курсач;
 
-
-
 public class Client
 {
-    private int id;
+    private int id ;
+
+    public int Id
+    {
+        get => id;
+        set => id = value;
+    }
+
+    public string FirstName
+    {
+        get => firstName;
+        set => firstName = value ?? throw new ArgumentNullException(nameof(value));
+    }
+
+    public string LastName
+    {
+        get => lastName;
+        set => lastName = value ?? throw new ArgumentNullException(nameof(value));
+    }
+
+    public int Age
+    {
+        get => age;
+        set => age = value;
+    }
+
+    public int PassNumber
+    {
+        get => passNumber;
+        set => passNumber = value;
+    }
+
+    public List<Product> Products
+    {
+        get => products;
+        set => products = value ?? throw new ArgumentNullException(nameof(value));
+    }
+
     public string firstName, lastName;
     public int age, passNumber;
     public List<Product> products;
