@@ -1,0 +1,13 @@
+attrs
+coursework==0.1.0
+iniconfig
+packaging
+pluggy
+py
+pyparsing
+PyQt6
+PyQt6-Qt6
+PyQt6-sip
+pytest
+qasync
+tomli
